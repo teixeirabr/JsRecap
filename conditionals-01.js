@@ -19,7 +19,7 @@ isOldEnoughToDrink = (age) => {
 console.log(isOldEnoughToDrink(21));
 
 /*
-2. isOldEnoughToDrive
+2. isOldEnoughToDrive .
 
 Write a function called "isOldEnoughToDrive". Given a number, in this case an age, "isOldEnoughToDrive" returns whether a person of this given age is old enough to legally drive in the United States. Notes:
 
