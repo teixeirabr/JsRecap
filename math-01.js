@@ -30,8 +30,7 @@ console.log(output); // --> 12
 /*/
 
 computeAreaOfATriangle = (base, height) => {
-  let math = base * height;
-  return math / 2;
+  return math * height * 0.5;
 };
 
 console.log(computeAreaOfATriangle(4, 6));
