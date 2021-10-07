@@ -13,15 +13,20 @@ console.log(output); // --> {ask: 1, a: 2, bunch: 2, get: 1}
 
 /*/
 
-countwords = (str) => {
-  if (str === 0) {
+countWords = (str) => {
+  if (str === "") {
     return {};
   }
-  let wordCount = str.split(" ");
-  for (let i = 0; i < wordCount.length; i++) {
-    wordCount[i] += ": " + [i];
+  let result = {};
+  let words = str.split(" ");
+  for (let i = 0; i < words.length; i++) {
+    if (result[words[i]] === undefined) {
+      result[words[i]] = 1;
+    } else {
+      result[words[i]] += 1;
+    }
   }
-  return wordCount;
+  return result;
 };
 
-console.log(countwords("ask a bunch get a bunch"));
+console.log(countWords("ask a bunch get a bunch"));
