@@ -18,4 +18,29 @@ var output = select(arr, obj);
 console.log(output); // --> { a: 1, c: 3 }
 */
 
-select = (arr, obj) => {};
+var arr = ["a", "c", "e"];
+
+var obj = {
+  a: 1,
+  b: 2,
+  c: 3,
+  d: 4,
+};
+
+select = (arr, obj) => {
+  //create a result object
+  let result = {};
+
+  //iterate over the array
+
+  for (let i = 0; i < arr.length; i++) {
+    //if current key is present in the input object
+    if (obj[arr[i]] !== undefined) {
+      console.log(arr[i]);
+      result[arr[i]] = obj[arr[i]];
+    }
+  }
+  return result;
+};
+
+console.log(select(arr, obj));
