@@ -14,5 +14,17 @@ console.log(output); // --> {b: 1, a: 3, n: 2}
 /*/
 
 function countAllCharacters(str) {
-  // your code here
+  let result = {};
+
+  for (let i = 0; i < str.length; i++) {
+    console.log([str[i]]);
+    if (result[str[i]] === undefined) {
+      result[str[i]] = 1;
+    } else {
+      result[str[i]] += 1;
+    }
+  }
+  return result;
 }
+
+console.log(countAllCharacters("banana"));
