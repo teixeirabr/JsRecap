@@ -17,11 +17,14 @@ function countAllCharacters(str) {
   let result = {};
 
   for (let i = 0; i < str.length; i++) {
-    console.log([str[i]]);
+    // console.log("string at i", [str[i]]);
     if (result[str[i]] === undefined) {
+      console.log("undefined", str[i]);
       result[str[i]] = 1;
+      console.log("first round", result);
     } else {
       result[str[i]] += 1;
+      console.log("second round", result);
     }
   }
   return result;
