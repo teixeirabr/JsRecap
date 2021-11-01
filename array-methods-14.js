@@ -14,6 +14,7 @@ You should be familiar with the "concat" method for this problem.
 function joinArrayOfArrays(arr) {
   let result = [];
   for (let i = 0; i < arr.length; i++) {
+    // console.log(arr[i]);
     result = result.concat(arr[i]);
   }
   return result;
